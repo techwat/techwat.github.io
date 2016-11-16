@@ -2,32 +2,33 @@ nav {
   font-size: 1.5em;
   top: 0;
   left: 0;
-  padding: 1em;
   margin-left: auto;
   margin-right: auto; }
-  @media (min-width: 600px) {
-    nav {
-      position: fixed;
-      padding: 1em; }
-      nav a {
-        display: inline-block; } }
   nav a {
-    display: block;
-    padding: 0.2em;
     color: #fff;
     text-decoration: none;
     transition: color 0.3s, background-color 0.3s; }
     nav a:hover {
       color: #fcd450;
       background-color: #333; }
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      padding: 0.2em; } }
+  @media (min-width: 600px) {
+    nav {
+      position: fixed; }
+      nav a {
+        display: inline-block;
+        padding: 1em; } }
 
 header {
-  height: 60vh;
+  height: 65vh;
   background-color: #000;
   padding-top: 10vh; }
   @media (min-width: 700px) {
     header {
-      padding-top: 40vh; } }
+      padding-top: 35vh; } }
   header h1 {
     text-align: center;
     color: #fff;
@@ -37,7 +38,7 @@ header {
     font-family: "Libre Franklin", sans-serif; }
     header h1 span {
       display: inline-block; }
-    @media screen and (min-width: 700px) {
+    @media (min-width: 700px) {
       header h1 {
         font-size: 4em; } }
   header article {
@@ -45,6 +46,9 @@ header {
     font-family: Lato;
     text-align: center;
     color: #fff; }
+    @media (max-width: 700px) {
+      header article {
+        font-size: 0.7em; } }
     header article h2 {
       margin: 0;
       margin-top: 1em; }
