@@ -1,0 +1,58 @@
+nav {
+  font-size: 1.5em;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 600px) {
+    nav {
+      position: fixed;
+      padding: 1em; }
+      nav a {
+        display: inline-block; } }
+  nav a {
+    display: block;
+    padding: 0.2em;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s; }
+    nav a:hover {
+      color: #fcd450;
+      background-color: #333; }
+
+header {
+  height: 60vh;
+  background-color: #000;
+  padding-top: 10vh; }
+  @media (min-width: 700px) {
+    header {
+      padding-top: 40vh; } }
+  header h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Libre Franklin", sans-serif; }
+    header h1 span {
+      display: inline-block; }
+    @media screen and (min-width: 700px) {
+      header h1 {
+        font-size: 4em; } }
+  header article {
+    font-size: 1.5em;
+    font-family: Lato;
+    text-align: center;
+    color: #fff; }
+    header article h2 {
+      margin: 0;
+      margin-top: 1em; }
+    header article p {
+      margin: 0; }
+    header article ul {
+      list-style-type: none;
+      margin: 0;
+      font-size: 0.7em;
+      font-style: italic;
+      padding: 0; }
